@@ -1,6 +1,6 @@
 package func;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Numbers {
@@ -17,10 +17,7 @@ public class Numbers {
 	}
 	
 	public static void main(String args[]) {
-		List<String> k = new ArrayList<String>();
-		k.add("3");
-		k.add("4");
-		Numbers number = new Numbers(k);
+		Numbers number = new Numbers(Arrays.asList("1", "2","3"));
 		number.map(System.out::println);
 	}
 }
